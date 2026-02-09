@@ -7,3 +7,12 @@ sudo pacman -S kvantum hyprland hyprlock hypridle kitty brightnessctl waybar dol
 ```
 
 [awww](https://codeberg.org/LGFae/awww) is also needed.
+
+## Installation
+
+After grabbing the dependencies, make sure you are inside the dotfiles directory and simply execute the install script:
+
+```bash
+chmod +x ./install.sh && ./install.sh
+```
+
