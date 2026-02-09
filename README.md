@@ -1,6 +1,9 @@
-# dotfiles-arch
-My dotfiles config for Arch Linux w/ Hyprland
+# Dotfiles for Arch Linux w/ Hyprland
 
-Dependencies needed at the moment (The list is not complete, I will make a command line as soon I finish publishing the dotfiles)
+## Dependencies
 
-awww, hyprland, hyprlock, hypridle, kitty, brightnessctl, waybar
+```bash
+sudo pacman -S kvantum hyprland hyprlock hypridle kitty brightnessctl waybar dolphin pipewire
+```
+
+[awww](https://codeberg.org/LGFae/awww) is also needed.
