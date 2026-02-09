@@ -3,7 +3,7 @@
 ## Dependencies
 
 ```bash
-sudo pacman -S kvantum hyprland hyprlock hypridle kitty brightnessctl waybar dolphin pipewire
+sudo pacman -S kvantum hyprland hyprlock hypridle kitty brightnessctl xfce4-screenshooter waybar dolphin pipewire
 ```
 
 [awww](https://codeberg.org/LGFae/awww) is also needed.
