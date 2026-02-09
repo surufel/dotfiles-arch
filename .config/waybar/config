@@ -1,0 +1,73 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "memory", "cpu", "pulseaudio", "network", "tray"],
+
+    "hyprland/window": {
+        "format": "  {class}",
+        "separate-outputs": true
+    },
+
+    "clock": {
+	"interval": 1,
+        "format": "{:%b %Y, %a. %d/%m at %H:%M:%S   }",
+        "format-alt": "{:%d/%m/%Y %H:%M   }"
+   },
+
+    "memory": {
+        "format": "|   {}% |"
+    },
+
+    "cpu": {
+        "format": "  {usage}% |"
+    },
+
+    "pulseaudio": {
+    "format": "{icon}  {volume}% | ",
+    "format-muted": "󰝟 muted | ",
+    "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "scroll-step": 5
+},
+
+    "network": {
+	"format-wifi": "{essid}",
+    	"format-ethernet": "󰈀 {ifname}",
+	"format-disconnected": "Offline",
+	"tooltip-format": "{essid}",
+	"on-click": "nm-applet"
+    },
+
+    "battery": {
+    "interval": 1,
+    "states": {
+        "warning": 20,
+        "critical": 10
+    },
+
+    "format": " {capacity}% {icon} ",
+    "format-charging": "{capacity}% {icon} ",
+    "format-alt": "{time} {icon} ",
+    "format-icons": {
+        "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂄"]
+    }
+}
+}
